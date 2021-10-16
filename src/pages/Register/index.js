@@ -16,7 +16,10 @@ const Register = ({navigation}) => {
         <Gap height={20} />
         <Input label="Password" />
         <Gap height={35} />
-        <Button title="Continue" onPress={() => navigation.navigate('UploadPhoto')}/>
+        <Button
+          title="Continue"
+          onPress={() => navigation.navigate('UploadPhoto')}
+        />
       </View>
     </View>
   );
