@@ -7,7 +7,11 @@ import {colors, fonts} from '../../utils';
 const index = ({navigation}) => {
   return (
     <View style={styles.page}>
-      <Header title="Upload Photo" icon="back-dark" onPress={() => navigation.goBack()} />
+      <Header
+        title="Upload Photo"
+        icon="back-dark"
+        onPress={() => navigation.goBack()}
+      />
       <View style={styles.content}>
         <View style={styles.profile}>
           <View style={styles.avatarWrapper}>

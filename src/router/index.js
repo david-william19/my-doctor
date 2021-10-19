@@ -8,6 +8,8 @@ import {
   Doctors,
   Messages,
   Hospitals,
+  Profile,
+  ChooseDoctor,
 } from '../pages';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
@@ -69,6 +71,16 @@ const Router = () => {
       <Stack.Screen
         name="MainApp"
         component={MainApp}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Profile"
+        component={Profile}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="ChooseDoctor"
+        component={ChooseDoctor}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

@@ -1,17 +1,19 @@
 import React from 'react';
-import {Image, StyleSheet, Text, View} from 'react-native';
+import {Image, StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import {UserProfile} from '../../../assets';
 import {colors, fonts} from '../../../utils';
 
-const HomeProfile = () => {
+const HomeProfile = ({navigation}) => {
   return (
-    <View style={styles.container}>
-      <Image source={UserProfile} style={styles.avatar} />
-      <View>
-        <Text style={styles.name}>Dinda Tanos</Text>
-        <Text style={styles.profession}>UI/UX Design</Text>
+    <TouchableOpacity onPress={() => navigation.navigate('UserProfile')}>
+      <View style={styles.container}>
+        <Image source={UserProfile} style={styles.avatar} />
+        <View>
+          <Text style={styles.name}>Dinda Tanos</Text>
+          <Text style={styles.profession}>UI/UX Design</Text>
+        </View>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 

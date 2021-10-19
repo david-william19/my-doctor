@@ -2,7 +2,7 @@ import React from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
 import {Gap} from '../..';
 import {ICStar, RateDokter1} from '../../../assets';
-import { colors, fonts } from '../../../utils';
+import {colors, fonts} from '../../../utils';
 
 const RatedDoctor = () => {
   return (
@@ -47,13 +47,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   name: {
-      fontSize: 16,
-      fontFamily: fonts.primary[600],
-      color: colors.text.primary,
+    fontSize: 16,
+    fontFamily: fonts.primary[600],
+    color: colors.text.primary,
   },
   specialist: {
-      fontFamily: fonts.primary.normal,
-      fontSize: 12,
-      color: colors.text.secondary,
-  }
+    fontFamily: fonts.primary.normal,
+    fontSize: 12,
+    color: colors.text.secondary,
+  },
 });

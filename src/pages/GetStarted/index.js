@@ -2,7 +2,7 @@ import React from 'react';
 import {StyleSheet, Text, View, ImageBackground} from 'react-native';
 import {ILGetStarted, ILLogo} from '../../assets';
 import {Button, Gap} from '../../components';
-import { fonts } from '../../utils';
+import {fonts} from '../../utils';
 
 const GetStarted = ({navigation}) => {
   return (
